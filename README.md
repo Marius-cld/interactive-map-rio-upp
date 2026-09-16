@@ -7,6 +7,15 @@ recensement (census).
 
 ![visuel-UPP](picture/visuel-UPP.png)
 
+## Cartes en ligne
+
+Les cartes Folium sont consultables directement, sans cloner le dépôt, via
+[htmlpreview.github.io](https://htmlpreview.github.io/) :
+
+- [Rio_Robbery_2012.html](https://htmlpreview.github.io/?https://github.com/Marius-cld/Interactive-Map-Rio-UPP/blob/main/map/Rio_Robbery_2012.html) — vols par UPP en 2012, zones pacifiées vs non pacifiées
+- [Rio_Income_Inf_Min_Wages.html](https://htmlpreview.github.io/?https://github.com/Marius-cld/Interactive-Map-Rio-UPP/blob/main/map/Rio_Income_Inf_Min_Wages.html) — % de ménages à revenu < 2x le salaire minimum
+- [Rio_Income_Sup_Min_Wages.html](https://htmlpreview.github.io/?https://github.com/Marius-cld/Interactive-Map-Rio-UPP/blob/main/map/Rio_Income_Sup_Min_Wages.html) — % de ménages à revenu > 10x le salaire minimum
+
 ## Structure
 
 ```
