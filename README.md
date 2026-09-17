@@ -12,9 +12,9 @@ recensement (census).
 Les cartes Folium sont consultables directement, sans cloner le dépôt, via
 GitHub Pages :
 
-- [Rio_Robbery_2012.html](https://marius-cld.github.io/Interactive-Map-Rio-UPP/maps/Rio_Robbery_2012.html) — vols par UPP en 2012, zones pacifiées vs non pacifiées
-- [Rio_Income_Inf_Min_Wages.html](https://marius-cld.github.io/Interactive-Map-Rio-UPP/maps/Rio_Income_Inf_Min_Wages.html) — % de ménages à revenu < 2x le salaire minimum
-- [Rio_Income_Sup_Min_Wages.html](https://marius-cld.github.io/Interactive-Map-Rio-UPP/maps/Rio_Income_Sup_Min_Wages.html) — % de ménages à revenu > 10x le salaire minimum
+- [Rio_Robbery_2012.html](https://marius-cld.github.io/interactive-map-rio-upp/maps/Rio_Robbery_2012.html) — vols par UPP en 2012, zones pacifiées vs non pacifiées
+- [Rio_Income_Inf_Min_Wages.html](https://marius-cld.github.io/interactive-map-rio-upp/maps/Rio_Income_Inf_Min_Wages.html) — % de ménages à revenu < 2x le salaire minimum
+- [Rio_Income_Sup_Min_Wages.html](https://marius-cld.github.io/interactive-map-rio-upp/maps/Rio_Income_Sup_Min_Wages.html) — % de ménages à revenu > 10x le salaire minimum
 
 ## Structure
 
