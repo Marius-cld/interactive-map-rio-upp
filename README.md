@@ -5,31 +5,31 @@ Janeiro (Unités de Police Pacificatrice, UPP) sur la criminalité, à partir de
 données de criminalité par UPP et de données socio-économiques par secteur de
 recensement (census).
 
-![visuel-UPP](picture/visuel-UPP.png)
+![visuel-UPP](pictures/visuel-UPP.png)
 
 ## Cartes en ligne
 
 Les cartes Folium sont consultables directement, sans cloner le dépôt, via
 GitHub Pages :
 
-- [Rio_Robbery_2012.html](https://marius-cld.github.io/Interactive-Map-Rio-UPP/map/Rio_Robbery_2012.html) — vols par UPP en 2012, zones pacifiées vs non pacifiées
-- [Rio_Income_Inf_Min_Wages.html](https://marius-cld.github.io/Interactive-Map-Rio-UPP/map/Rio_Income_Inf_Min_Wages.html) — % de ménages à revenu < 2x le salaire minimum
-- [Rio_Income_Sup_Min_Wages.html](https://marius-cld.github.io/Interactive-Map-Rio-UPP/map/Rio_Income_Sup_Min_Wages.html) — % de ménages à revenu > 10x le salaire minimum
+- [Rio_Robbery_2012.html](https://marius-cld.github.io/Interactive-Map-Rio-UPP/maps/Rio_Robbery_2012.html) — vols par UPP en 2012, zones pacifiées vs non pacifiées
+- [Rio_Income_Inf_Min_Wages.html](https://marius-cld.github.io/Interactive-Map-Rio-UPP/maps/Rio_Income_Inf_Min_Wages.html) — % de ménages à revenu < 2x le salaire minimum
+- [Rio_Income_Sup_Min_Wages.html](https://marius-cld.github.io/Interactive-Map-Rio-UPP/maps/Rio_Income_Sup_Min_Wages.html) — % de ménages à revenu > 10x le salaire minimum
 
 ## Structure
 
 ```
 src/
   main.py            Pipeline complet : charge les données, les nettoie,
-                     génère les cartes Folium dans map/
+                     génère les cartes Folium dans maps/
 data/
   UPP/               Données au niveau UPP (crimes, dates de pacification,
                      limites géographiques, matching UPP <-> shapefile)
   censitorios/       Données socio-économiques au niveau des secteurs de
                      recensement (densité, indicateurs de revenu) — à ajouter
                      manuellement, voir Données ci-dessous
-map/                  Cartes HTML générées (Folium)
-picture/               Visuels utilisés dans ce README (non générés par le script)
+maps/                 Cartes HTML générées (Folium)
+pictures/             Visuels utilisés dans ce README (non générés par le script)
 docs/                 Énoncé de l'exercice
 ```
 
@@ -56,7 +56,7 @@ clairement plutôt que d'échouer.
 python3 src/main.py
 ```
 
-Génère dans `map/` :
+Génère dans `maps/` :
 
 - `Rio_Robbery_2012.html` — vols par UPP en 2012, zones pacifiées vs non pacifiées
 - `Rio_Income_Inf_Min_Wages.html` — % de ménages à revenu < 2x le salaire minimum (nécessite les données census ci-dessus)

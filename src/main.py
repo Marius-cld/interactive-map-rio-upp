@@ -14,7 +14,7 @@ import pandas as pd
 ROOT_DIR = Path(__file__).resolve().parent.parent
 DATA_UPP_DIR = ROOT_DIR / "data" / "UPP"
 DATA_CENSITORIOS_DIR = ROOT_DIR / "data" / "censitorios"
-MAP_DIR = ROOT_DIR / "map"
+MAP_DIR = ROOT_DIR / "maps"
 
 
 def f_matching(row, matching):
