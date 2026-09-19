@@ -12,9 +12,9 @@ recensement (census).
 Les cartes Folium sont consultables directement, sans cloner le dépôt, via
 GitHub Pages :
 
-- [Rio_Robbery_2012.html](https://marius-cld.github.io/interactive-map-rio-upp/maps/Rio_Robbery_2012.html) — vols par UPP en 2012, zones pacifiées vs non pacifiées
-- [Rio_Income_Inf_Min_Wages.html](https://marius-cld.github.io/interactive-map-rio-upp/maps/Rio_Income_Inf_Min_Wages.html) — % de ménages à revenu < 2x le salaire minimum
-- [Rio_Income_Sup_Min_Wages.html](https://marius-cld.github.io/interactive-map-rio-upp/maps/Rio_Income_Sup_Min_Wages.html) — % de ménages à revenu > 10x le salaire minimum
+- [Rio_Robbery_2012.html](https://marius-cld.github.io/interactive-map-rio-upp/maps/Rio_Robbery_2012.html) : vols par UPP en 2012, zones pacifiées vs non pacifiées
+- [Rio_Income_Inf_Min_Wages.html](https://marius-cld.github.io/interactive-map-rio-upp/maps/Rio_Income_Inf_Min_Wages.html) : % de ménages à revenu < 2x le salaire minimum
+- [Rio_Income_Sup_Min_Wages.html](https://marius-cld.github.io/interactive-map-rio-upp/maps/Rio_Income_Sup_Min_Wages.html) : % de ménages à revenu > 10x le salaire minimum
 
 ## Structure
 
@@ -26,7 +26,7 @@ data/
   UPP/               Données au niveau UPP (crimes, dates de pacification,
                      limites géographiques, matching UPP <-> shapefile)
   censitorios/       Données socio-économiques au niveau des secteurs de
-                     recensement (densité, indicateurs de revenu) — à ajouter
+                     recensement (densité, indicateurs de revenu), à ajouter
                      manuellement, voir Données ci-dessous
 maps/                 Cartes HTML générées (Folium)
 pictures/             Visuels utilisés dans ce README (non générés par le script)
@@ -46,8 +46,8 @@ pip install -r requirements.txt
 Les fichiers `data/censitorios/Densidade.json` et `Inegalidade.json` ne sont
 **pas** versionnés (169 Mo et 175 Mo, au-delà de la limite de 100 Mo par
 fichier de GitHub). Placez-les dans `data/censitorios/` avant d'exécuter le
-script si vous voulez régénérer les cartes socio-économiques — en leur
-absence, le script génère uniquement la carte de criminalité et l'indique
+script si vous voulez régénérer les cartes socio-économiques,
+le script génère uniquement la carte de criminalité et l'indique
 clairement plutôt que d'échouer.
 
 ## Génération des cartes
@@ -58,9 +58,9 @@ python3 src/main.py
 
 Génère dans `maps/` :
 
-- `Rio_Robbery_2012.html` — vols par UPP en 2012, zones pacifiées vs non pacifiées
-- `Rio_Income_Inf_Min_Wages.html` — % de ménages à revenu < 2x le salaire minimum (nécessite les données census ci-dessus)
-- `Rio_Income_Sup_Min_Wages.html` — % de ménages à revenu > 10x le salaire minimum (nécessite les données census ci-dessus)
+- `Rio_Robbery_2012.html` : vols par UPP en 2012, zones pacifiées vs non pacifiées
+- `Rio_Income_Inf_Min_Wages.html` : % de ménages à revenu < 2x le salaire minimum (nécessite les données census ci-dessus)
+- `Rio_Income_Sup_Min_Wages.html` : % de ménages à revenu > 10x le salaire minimum (nécessite les données census ci-dessus)
 
 Les couches socio-économiques (secteurs de recensement) sont simplifiées
 géométriquement et les coordonnées arrondies avant export afin de garder des
